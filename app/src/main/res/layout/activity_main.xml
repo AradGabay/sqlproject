@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".EnterData">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif"
+        android:text="Enter Student Data:"
+        android:gravity="center"
+        android:textSize="30sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+
+                    <EditText
+                        android:id="@+id/studname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="name"/>
+                    <EditText
+                        android:id="@+id/studaddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="address"/>
+
+                    <EditText
+                        android:id="@+id/cellnum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="cell num"/>
+
+                    <EditText
+                        android:id="@+id/homenum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="home num"/>
+
+
+
+                </LinearLayout>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"/>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+
+                    <EditText
+                        android:id="@+id/fathername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="father name"/>
+                    <EditText
+                        android:id="@+id/fathernum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="father num"/>
+
+                    <EditText
+                        android:id="@+id/momname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="mother name"/>
+
+                    <EditText
+                        android:id="@+id/momnum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="mother num"/>
+
+
+                </LinearLayout>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"/>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:layout_gravity="center"
+            android:text="Apply Data"
+            android:onClick="applystudentdata"/>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif"
+        android:text="Enter Grade Data:"
+        android:gravity="center"
+        android:textSize="30sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/quarter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Quarter"
+                android:layout_gravity="center"/>
+            <EditText
+                android:id="@+id/subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Subject"
+                android:layout_gravity="center"/>
+            <EditText
+                android:id="@+id/grade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Grade"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apply Data"
+                android:onClick="applygradedata"
+                android:layout_gravity="center|bottom"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25"/>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
