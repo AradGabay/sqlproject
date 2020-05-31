@@ -13,6 +13,10 @@
         android:id="@+id/sortTables"
         android:title="Sort Tables"
         />
+    <item
+        android:id="@+id/credits"
+        android:title="Credits"
+        />
 
 
 </menu>

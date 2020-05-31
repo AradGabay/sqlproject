@@ -37,18 +37,18 @@ public class HelperDB extends SQLiteOpenHelper {
         strCreate+=" ("+Students.KEY_ID+" INTEGER PRIMARY KEY,";
         strCreate+=" "+NAME+" TEXT,";
         strCreate+=" "+ADDRESS+" TEXT,";
-        strCreate+=" "+CEL_NUM+" TEXT,";
-        strCreate+=" "+HOME_NUM+" TEXT,";
+        strCreate+=" "+CEL_NUM+" INTEGER,";
+        strCreate+=" "+HOME_NUM+" INTEGER,";
         strCreate+=" "+FATHER_NAME+" TEXT,";
-        strCreate+=" "+FATHER_NUM+" TEXT,";
+        strCreate+=" "+FATHER_NUM+" INTEGER,";
         strCreate+=" "+MOTHER_NAME+" TEXT,";
-        strCreate+=" "+MOTHER_NUM+" TEXT";
+        strCreate+=" "+MOTHER_NUM+" INTEGER";
         strCreate+=");";
         db.execSQL(strCreate);
 
         strCreate="CREATE TABLE "+TABLE_GRADES;
-        strCreate+=" ("+KEY_ID+" INTEGER PRIMARY KEY,";
-        strCreate+=" ("+QUARTER+"  INTEGER,";
+        strCreate+=" ("+Students.KEY_ID+" INTEGER PRIMARY KEY,";
+        strCreate+=" "+QUARTER+"  INTEGER,";
         strCreate+=" "+SUBJECT+" TEXT,";
         strCreate+=" "+GRADE+" INTEGER";
         strCreate+=");";

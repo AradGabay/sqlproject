@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".EnterData">
+    tools:context=".InsertData">
 
     <TextView
         android:layout_width="match_parent"
@@ -63,13 +63,15 @@
                         android:id="@+id/cellnum"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="cell num"/>
+                        android:hint="cell num"
+                        android:inputType="phone"/>
 
                     <EditText
                         android:id="@+id/homenum"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="home num"/>
+                        android:hint="home num"
+                        android:inputType="phone"/>
 
 
 
@@ -112,7 +114,8 @@
                         android:id="@+id/fathernum"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="father num"/>
+                        android:hint="father num"
+                        android:inputType="phone"/>
 
                     <EditText
                         android:id="@+id/momname"
@@ -124,7 +127,8 @@
                         android:id="@+id/momnum"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="mother num"/>
+                        android:hint="mother num"
+                        android:inputType="phone"/>
 
 
                 </LinearLayout>
